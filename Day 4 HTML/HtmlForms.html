@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTMLForms </title>
+</head>
+<body>
+    <!--HTML Forms :Build to intake basic information of a candidate (like user name, email, password etc.)
+        <form></form> tag is used to create form .
+            a) Action Atribute of form tag : Used to define what action needs to be performed when a form is submitted or where the form data shoul be sent .
+
+        Form Element :
+        1) Input element (<input>) : Used to create multiple form controls . There are multiple types of inputs that can be created using type attribute
+                a) Most used type attribute of input tag : Used to create form controls of different type . 
+                    1) type="text" : Used to create form control for storing textual values . (By default value of type attribute is text) .
+                    2) type="password" : Used to create form control for storing password values .
+                    3) type="number" : Used to create form control for storing number values .
+                    4) type="time" : Used to create form control for storing time values .
+                    5) type="color" : Used to create form control for storing color values . 
+                    5) type="date" : Used to create form control for storing date values . 
+                    6) type="checkbox" : Used to create form control for storing multiple status values (in general).
+                                           And if submit the form information by selecting the checkbox then submitted information will be submitted 
+                                           in the form of"NAME OF FORM CONTROL = on" otherwise no form control name-value pair is passed on the URL . 
+                                           To group the checkbox items , name attribute's value must be same everywhere .
+                    7) type="file" : Used to create form control for storing file values . 
+                    8) type="radio" : Used to create radio button for selecting single/multiple item from the list .
+                                        And if submit the form information by selecting the radio button then submitted information will be submitted 
+                                        in the form of"NAME OF FORM CONTROL = on" otherwise no form control name-value pair is passed on the URL .
+                                        If we use same name attribute's value in the input element then only we can select the single item otherwise  
+                                        we can select multiple item  from the list. To group the radio item , name attribute's value must be same everywhere,
+                                        otherwise all the radio item will be consider asthe different entity and we can select multiple radio item .
+                    9) type="range" : Used to create range selecting control so as to select range .
+                    10) type="min" : Used to assign minimum range value .
+                    11) type="max" : Used to assign maximum range value .
+                    12) type="step" : Used to assign step after each incrementing/decrementing the range value .
+                    .
+                    .
+                    and so on ....
+                b) placeholder attribute of input tag : Used to add random text which appears as pre-text which will disappear when the user
+                                                        write his/her own text in the form controls .
+                c) id attribute of input tag : Used to give the name of give tag (input tag).
+                d) name attribute of input tag : Used to refer or access form data and also used to send form data in (name=value) pair
+                e) value attribute of input tag : Used to refer value for the name attribute in the URL .
+        2) <label></label> : Used to establish the connection between normal text and form controls to form a single entity .
+        3) <button></button> : Used to create button . (By default in the form the behaviour of button is to submit the form data but the by default
+                               behaviour of button ouside the form is to do nothing)
+                a) Most used type attribute of button tag : Used to define the behaviour of button 
+                    1) type="submit" : Used to submit the form data .                
+                    2) type="button" : Used to do somethin with the form data .                
+                    3) type="reset" : Used to  reset the form data .
+        4) <select></select> : Used to build the drop down menu using <option></opton> element of it to create list of drop down menu 
+                               ("selected" attribute of option element used for selecting the by default value) . value attribute of 
+                               option element is used to assign the value of each item , which is visible on the URL when the form is submitted . 
+        5) <texttarea></textarea> : Uesd to write related text like feedback , comment etc . For textarea element by default value of row and column 
+                                    is 2 and 10 respectively .
+
+    -->
+
+    <form action = "/action">
+
+        <div>
+            <label for="Username"> Username : </label>
+            <input type="text" id="Username" placeholder="Enter username" name="username">
+        </div>
+
+        <div>
+            <label for="Password"> Password : </label>
+            <input type="password" id="Password" placeholder="Enter password">
+        </div>
+
+        <div>
+            <label for="Age"> Enter Age : </label>
+            <input type="number" id="Age" placeholder="Enter age">
+        </div>
+
+        <div>
+            <b> Select one fruit : </b>
+            <label for="Apple"> Apple </label>
+            <input type="radio" name="Fruit" id="Apple" value="apple">
+
+            <label for="Orange"> Orange </label>
+            <input type="radio" name="Fruit" id="Orange" value="orange">
+
+            <label for="Papaya"> Papaya </label>
+            <input type="radio" name="Fruit" id="Papaya" value="papaya">
+        </div>
+
+        <div>
+            <b> Choose your subjects : </b>
+            <label for="Maths"> Maths </label>
+            <input type="checkbox" name="Subject" id="Maths" value="Maths">
+            <label for="Science"> Science </label>
+            <input type="checkbox" name="Subject" id="Science" value="Science">
+            <label for="English"> English </label>
+            <input type="checkbox" name="Subject" id="English" value="English">
+        </div>
+
+        <div>
+            <b> Choose your profession : </b> 
+            <select name="Profession" id="Prof">
+                <option> Choose Your Option </option>
+                <option value="Student" selected> Student </option>
+                <option value="Developer"> Developer </option> 
+            </select>
+        </div>
+
+        <div>
+            <label for="vol"> <b> Select Your Volume Level : </b> </label>
+            <input type="range" name="Volume" id="vol" min="0" max="105" step="5">
+        </div>
+
+        <div>
+            <label for="Feedback"><b> Please give your feedback : </b></label>
+            <textarea name="Feedback" id="Feedback" placeholder="Write your feedback"></textarea>
+        </div>
+        
+        
+        <button type="submit"> Submit </button>
+        <!-- <button type="button"> Hello </button> -->
+        <!-- <button type="reset"> Reset </button> -->
+
+        <!-- CREATING BUTTON USING INPUT TAG (But generally not preferd to create button using input tag in HTML) -->
+        <!-- <input type = "button" value = "Click me">
+        <input type="submit" value="Click me 2"> -->
+
+
+        <!-- Time : <input type="time">
+        <br>
+        Color : <input type="color">
+        <br>
+        Status : <input type="checkbox">
+        <br>
+        DateTime : <input type="datetime-local">
+        <br>
+        Email : <input type="email">
+        <br>
+        File : <input type="file"> -->
+    </form>
+</body>
+</html>

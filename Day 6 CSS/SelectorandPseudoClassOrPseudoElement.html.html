@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> SelectorandPseudoClass/Element </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- selector : Used to select the  partiucular element 
+                    Syntax of writing the selector is : 
+                            selector_name {property1 : value1 ; property2 : value2; ..... }
+                    There are many types of selector : 
+                            a) Universal selector : select all the element of HTML document and  to style all the element .
+                                    Syntax of writing universal selector :
+                                        *{property1 : value1; property2 : value2; .....} 
+                            b) Element selector : Select only given named element .
+                                    Syntax of writing element selector :
+                                        ELEMENT_NAME {property1 : value1; property2 : value2; .....}
+                            c) Id selector : Select those element whose id is same .
+                                    Syntax of writing id selector :
+                                        #ID_NAME {property1 : value1; property2 : value2; .....}
+                            d) Class selector : selects an element based on their class attribute . 
+                                    Syntax of writing class selector :
+                                        .CLASS_NAME {property1 : value1; property2 : value2; .....}
+                            e) Descendant selector : selects all paragraph inside divs 
+                                    Syntax of writing descendant selector :
+                                        div p {property1 : value1; property2 : value2; ......}
+                            f Attribute selector : select the element based on the presence or value of a given attribute . 
+                                    Syntax of writing attribute selector : 
+                                        ELEMENT_NAME [ATTRIBUTE_NAME="ATTRIBUTE_VALUE"] {property1 : value1; property2 : value2; ......}
+                            
+                            
+                    NOTE : class property can be applied to same as well different type of elements 
+                            -> Adjacent sibling combinator : used to add that element for styling which comes immediately after each other or which are on same level .
+                                                    Its syntax is : p + h3 {property1 : value1; property2 : value2; .......} this means below in this doc,
+                                                    after each paragraph all h3 headings are selected for styling and here + is sibling combinator .
+                            -> Child combinator : Select all the element which are the children of another element or which immediately comes inside the other/parent element. 
+                                                  Its sysntax is : span > button {property1 : value1; property2 : value2; .....} this means below in this doc
+                                                  all the button which are in the span elelent will be selected for styling and here > is child combinator .
+                                                  In child selector only those element are selected that are just chldren of the parent element . That means
+                                                  only one level depth is allowed for the child combinator . 
+
+
+                    Pseudo Class : A keyword added to a selector that specifies a special state of the selected element(s) 
+                                    Most commonly used types of pseudo class :
+                                        a) hover : used to change text-color , background-color of text , buttons heading and many more ...
+                                        b) active : Uesd to chage the css prperty when we click on the entity to activate it .
+                                        c) checked : Used to change the css property when the entity is selected .
+                                        d) nth-of-type : Used to select the nth element of same type .
+                    
+                    Pseudo Elements : A keyword added to a selector that lets you style a specific part of the selected element(s) .
+                                    Most commonly used types of pseudo element :
+                                        a) first-letter : Used to give the style for the first letter of the entity (like headiing , paragraph and so on) .
+                                        b) first-line : Used to give the style for the line (like paragraph) .
+                                        c) selection : Used to give the style for the selected segment  (like background-color of paragraph and so on) .
+                    What is cascade in css? : The CSS cascade algorithm's job is to select CSS declaration in order to determine the correct values for CSS properties .
+                                              EXAMPLE : h2 {background-color : yellow};
+                                                        h2 {background-color : blue};
+                                                        Here for the above example we can say that the final color will be blue because if we have same selector for styling
+                                                        so the final styling (written at last) will be applied to the HTML document . And this is also applied to multiple CSS 
+                                                        file which means if we created multiple CSS file then the styling of the last CSS file linked to the HTML document will be applied .
+                    
+                    What is specificity? : Specificity is an algorithm that calculates the CSS style weight that is applied in CSS style declaration . That means it tell us , which CSS style is to be applied .
+                    NOTE : precedence of specificity : !important >inline style > id selector > class , attribute and pseudo class > element selector and pseudo element .
+                    NOTE : !mportant : To show the most specific thing in document .
+                    NOTE : more selector > less selector .
+                     
+                                          
+
+    -->
+    <header>
+
+        <h1> Quora 
+            <button id="login"> Log in </button>
+            <button id="signup"> Sign up </button>
+        </h1>
+
+        <div>
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password">
+        </div>
+
+        <nav>
+            <ul>
+                <li> <a href="/home"> Home </a> </li>
+                <li> <a href="/following"> Following </a> </li>
+                <li> <a href="/answer"> Answer </a> </li>
+                <li> <a href="/spaces"> Spaces </a> </li>
+            </ul>
+        </nav>
+        <hr>
+
+    </header>
+    <main>
+        <div>
+            <p class="post">
+                Adam &nbsp;&nbsp;
+                <a class="follow" href="/adam"> Follow /abc </a>
+            </p>
+    
+            <h3> What is the highest salary for a spacex engineer?</h3>
+            <span>
+                <button class="upvote"> +upvote </button>
+                <button> answer </button>
+            </span>
+            <hr />
+        </div>
+        
+
+        <div>
+            <p class="post">
+                Bob &nbsp;&nbsp;
+                <a class="follow" href="/bob"> Follow xyz </a>
+            </p>
+    
+            <h3> What is the syllabus for JEE 2024? </h3>
+            <span>
+                <button class="upvote">  +upvote </button>
+                <button> answer </button>
+            </span>
+            <hr>
+    
+        </div>
+        
+        <div>
+            <p class="post">
+                Catlyn &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="follow" href="/catlyn"> Follow pqr </a>
+            </p>
+    
+            <h3> Why is the sky blue? </h3>
+            <span>
+                <button class="upvote"> +upvote </button>
+                <button> answer </button>
+            </span>
+            <hr>
+    
+        </div>
+        
+        <div>
+            <p class="post">
+                Dan &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="follow" href="/dan"> Follow pqr </a>
+            </p>
+    
+            <h3> Why is the sky blue? </h3>
+            <span>
+                <button class="upvote"> +upvote </button>
+                 <button> answer </button>
+            </span>
+            <hr>
+        </div>
+        
+        <p> This is the end of my website . Know more about us on <a href="https://www.google.com/"> Google </a></p>
+    </main>
+    <div id="myId">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta atque ducimus rem aliquam soluta nesciunt assumenda voluptatibus possimus quia fuga nostrum explicabo officia aut molestias, fugit veritatis voluptatem id consequatur?
+        </p>
+    </div>
+    <div>
+        <input type="radio" id="Yes" name="agreement">
+        <label for="Yes" class="status"> Yes </label>
+        <input type="radio" id="No" name="agreement">
+        <label for="No" class="status"> No </label> 
+    </div>
+  </body>
+</html>

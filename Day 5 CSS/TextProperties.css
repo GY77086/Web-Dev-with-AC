@@ -1,0 +1,29 @@
+h1
+{
+    text-align: center;
+    /* border: solid; */
+    /* width: 50%; */
+    text-decoration: red solid underline;
+    letter-spacing: normal;
+}
+h2
+{
+    font-weight: 400;
+    text-decoration: blue solid line-through;
+    font-family: impact;
+}
+h3
+{
+    text-decoration: darkcyan solid overline;
+}
+p
+{
+    text-align: justify;
+    font-weight: normal;
+    line-height: 20px;
+    font-size: 15px;
+}
+a
+{
+    text-decoration: none;
+}

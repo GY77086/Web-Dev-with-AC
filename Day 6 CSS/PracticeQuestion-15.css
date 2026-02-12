@@ -1,0 +1,23 @@
+*
+{
+    font-family: 'Courier New';
+}
+h1
+{
+    color: #1b74e4 !important;
+}
+#searchButton
+{
+    background-color: black;
+    color: white;
+}
+/* #login , #register
+{
+    background-color: aqua;
+    color: black;
+} */
+.userButton 
+{
+    background-color: aqua;
+    color: black;
+}

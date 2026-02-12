@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTMLTables </title>
+</head>
+<body>
+    <!-- Table : Collection of row and and column .
+         Row : Horizontal line in a table denotes row .
+         Column : Vertical line in a row denote column .
+
+         Tags for HTML Table :
+         <table></table> : Used to create HTML tables
+         <tr></tr> : Used to display table row .
+         <th></th> : Used to display table header .
+         <td></td> : Used to display table data .
+         Semantic Tag in HTML Tables :
+         <thead></thead> : Used to wrap table header .
+         <tbody></tbody> : Used to wrap table body .
+         <tfoot></tfoot> : Used to wrap table footer .
+         Spanning in rows and columns of HTML Tables : Marging rows and column in HTML Tables
+         Spanning attributes :
+         1) Colspan : Merge two or more than two columns .
+         2) Rowspan : Merge two or more than two rows .
+    -->
+    <!-- <table border="black">
+        <caption> Food Menu </caption>
+        <thead>
+            <tr>
+                <th> Items </th>
+                <th> Price </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Frooti </td>
+                <td> 10 </td>
+            </tr>
+            <tr>
+                <td> Samosa </td>
+                <td> 12 </td>
+            </tr>
+            <tr>
+                <td> Chips </td>
+                <td> 20 </td>
+            </tr>
+        </tbody>
+        
+    </table> -->
+    <table border="solid">
+        <caption> Food Menu </caption>
+        <thead>
+            <tr>
+                <th rowspan="2"> Items </th>
+                <th colspan="2"> Price </th>
+            </tr>
+            <tr>
+                <th> INR </th>
+                <th> USD </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Frooti </td>
+                <td> 10 </td>
+                <td> 0.14 </td>
+            </tr>
+            <tr>
+                <td> Samosa </td>
+                <td> 12 </td>
+                <td> 0.17 </td>
+            </tr>
+            <tr>
+                <td> Chips </td>
+                <td> 20 </td>
+                <td> 0.28 </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

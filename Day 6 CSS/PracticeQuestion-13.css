@@ -1,0 +1,25 @@
+#myId 
+{
+    color: chocolate;
+}
+
+div[id="yourId"] p
+{
+    color: brown;
+}
+
+
+
+/* for practiceQuestion-14 Quetion-3 */
+div.greatDiv .great
+{
+    color: green;
+}
+.greatDiv p.great 
+{
+    color: blue;
+}
+.greatDiv .great 
+{
+    color : red;
+}

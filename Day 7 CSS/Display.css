@@ -1,0 +1,18 @@
+/* h2
+{
+    display: inline;
+}
+
+span
+{
+    display: block;
+} */
+
+span
+{
+    background-color: green;
+    border: 3px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+}

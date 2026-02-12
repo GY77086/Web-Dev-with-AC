@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CssBoxModel </title>
+    <link rel="stylesheet" href="CssBoxModel.css">
+</head>
+<body>
+    <!-- CSS Box Model : Used to write the content in the box so as to make complex web layout .
+         Major types of property of box model : 
+                a) Height : Used to set the height of the content area height of the element . By default the height of html element is 0 
+                            until and unless we have not assigned the height explicitly .
+                b) Width : Used to set the widht of the content area and by default the
+                   width of html element or content area is monitor's full screen . 
+                c) border : Used to set the border-width , border-color , border-style ..... of different html element . 
+                            Sub properties of border are : 
+                                a) Border side : To control an individual side of the box like :
+                                        1) border-left : To control the left side of border .
+                                        2) border-right : To control the right side of border .
+                                        3) border-top : To control the top side of border .
+                                        4) border-bottom : To control the bottom side of border . 
+                                b) border radius : Used to round the corner of an element's outer border edge . And if we want to 
+                                                   circle the element's corner then the height and width of that element must be same . 
+                                                   It can use different types of unit like : 
+                                                            a) percentege (%) 
+                                                            b) pixel (px)
+                                                   And if we want to change the border-radius of one corner specifically then :
+                                                            a) border-top-right-radius : for changing the radius of top right corner .
+                                                            b) border-top-left-radius : for changing the radius of top left corner .
+                                                            c) border-bottom-right-radius : for changing the radius of bottom right corner .
+                                                            d) border-bottom-left-radius : for changing the radius of bottom left corner .
+                d) padding : Used to manipulate the empty part around the content area . Types of padding :
+                             a) pandding-top : Used to manipulate the top side empty part .
+                             b) pandding-bottom : Used to manipulate the bottom side empty part .
+                             c) pandding-left : Used to manipulate the left side empty part .
+                             d) pandding-right : Used to manipulate the right side empty part .
+                             Unit it used like :
+                                 a) pixels (px)
+                            There are different types of padding shorthand syntax , like :
+                                    a) for all sides : padding: 50px; -> This syntax set the padding for alls side
+                                    b) for (top bottom) and (left right) : padding: 5px 15px; -> In this syntax , the first value is for both top and bottom side
+                                                                                                 and the second value is for left and right side . 
+                                    c) for top (left right) and bottom : padding 3px 5px 7px; -> In this syntax , the first value is for top and second value is for both left 
+                                                                                                and right and the third value is for bottom . 
+                                    d) for all side but in clockwise direction : padding: 1px 3px 5px 7px; -> In this syntax , the first value is for top side , second is for right
+                                                                                                              side , third value is for bottom side and fourth value is for left side . 
+                e) marging : Used to set the spacing on the outside of border . Types of marging :
+                             a) margin-top : Used to set the space on the top side of border .
+                             b) margin-bottom : Used to set the space on the bottom side of border .
+                             c) margin-left : Used to set the space on the left side of border .
+                             d) margin-right : Used to set the space on the right side of border .
+                             Unit it used like : 
+                                 a) pixels (px)
+                            There are different types of padding shorthand syntax , like :
+                                    a) for all sides : padding: 50px; -> This syntax set the margin for all side
+                                    b) for (top bottom) and (left right) : padding: 5px 15px; -> In this syntax , the first value is for both top and bottom side
+                                                                                                 and the second value is for left and right side . 
+                                    c) for top (left right) and bottom : padding 3px 5px 7px; -> In this syntax , the first value is for top and second value is for both left 
+                                                                                                and right and the third value is for bottom . 
+                                    d) for all side but in clockwise direction : padding: 1px 3px 5px 7px; -> In this syntax , the first value is for top side , second is for right
+                                                                                                              side , third value is for bottom side and fourth value is for left side .
+                            
+                    
+
+     -->
+    <h1> Random Heading </h1>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia 
+        adipisci laborum similique nemo unde molestias
+        ipsa quidem voluptates nisi! Placeat quisquam recusandae soluta
+        beatae nostrum ab accusantium nobis consectetur dignissimos?
+    </div>
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel 
+        tenetur expedita fugit distinctio nisi incidunt sapiente 
+        corrupti nihil perferendis, eum quibusdam consequuntur minima 
+        blanditiis animi non magni nemo ratione commodi.
+    </div>
+    <button> Click me </button>
+</body>
+</html>

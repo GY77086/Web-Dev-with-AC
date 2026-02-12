@@ -1,0 +1,51 @@
+div
+{
+    /* height: 50px; */
+    /* width: 500px; */
+    background-color: pink;
+
+    /* normal way */
+    /* border-style: solid; */
+    /* border-width: 3px; */
+    /* border-color: aqua; */
+
+    /* border shorthand way */
+    border: solid yellow 5px;
+
+    /* normal way */
+    /* border-left-color: blue;
+    border-left-style: dashed; */
+
+    /* border shorthand way */
+    /* border-top: dashed blue 3px; */
+    /* border-radius: 20px; */
+    /* border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%; */
+
+    padding-top: 30px;
+    margin-bottom: 25px;
+    
+}
+
+
+h1
+{
+    /* normal way */
+    /* border-width: 2px;
+    border-style: dashed;
+    border-color: brown; */
+
+    /* border shorthand way */
+    border: 3px dotted green;
+}
+
+
+button
+{
+    border: solid 3px black;
+    border-radius: 10px;
+    /* padding-left: 25px; */
+    /* padding-right: 25px; */
+    padding: 0px 40px 0px 40px;
+    background-color: blueviolet;
+}

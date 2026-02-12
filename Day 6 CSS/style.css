@@ -1,0 +1,132 @@
+/* Unversal selector */
+*
+{
+    font-family: 'Courier New';
+}
+/* h3
+{
+    color: teal;
+} */
+
+/* Element selector */
+h1 , h3
+{
+    color: #b92b27;
+}
+
+/* Id selector */
+#login
+{
+    color: aqua;
+    background-color: #b92b27;
+}
+#signup
+{
+    color: aqua;
+    background-color: #b92b27 ;
+}
+
+/* Class selector */
+.upvote
+{
+    background-color: aqua;
+}
+
+.post a 
+{
+    color:teal;
+    background-color: greenyellow;
+}
+
+/* Attrinbute selector */
+input[type="text"]
+{
+    color: red;
+}
+input[type="password"]
+{
+    color: green;
+}
+
+/* Descendant selector */
+nav ul li 
+{
+    color: hotpink;
+}
+nav ul li a
+{
+    color: rgb(173, 105, 255);
+}
+
+/* Adjacent sibling combinator */
+p + h3 
+{
+    text-decoration: underline;
+}
+.upvote + button
+{
+    background-color: darkgoldenrod;
+}
+
+/* Child combinator */
+div > input 
+{
+    background-color: rgb(233, 231, 231);
+}
+ul > li 
+{
+    background-color: rgb(226, 223, 0);
+}
+
+/* Pseudo Class : hover */
+button:hover
+{
+    background-color: black;
+    color: white;
+}
+h3:hover
+{
+    text-decoration: none;
+}
+
+/* Pseudo Class : active */
+button:active
+{
+    background-color: crimson;
+    color: black;
+}
+p:active
+{
+    font-weight: bold;
+    color: black;
+}
+
+/* Pseudo Class : checked */
+input[type="radio"]:checked + label
+{
+    color: red;
+    font-weight: bold;
+}
+
+/* Pseudo Class : nth-of-type(VALUE) */
+div:nth-of-type(2n)
+{
+    background-color: blanchedalmond;
+}
+/* Pseudo Element : first-letter */
+/* h1::first-letter
+{
+    color: green;
+} */
+
+/* Pseudo Element : first-line */
+p::first-line
+{
+    color: blueviolet;
+}
+
+/* Pseudo Element : selection */
+p::selection
+{
+    background-color: rgb(205, 202, 50);
+}
